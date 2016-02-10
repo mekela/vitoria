@@ -7,43 +7,36 @@ overflow: hidden;
 
 @mixin button($button){
   @include button_gradient('');
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
+  border-radius: 21px;
   font-family: $ffamily;
+  display: inline-block;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: bold;
+  text-transform: uppercase;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: none;
 }
 @mixin button_gradient($button_gradient){
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  background: #b2292e;
 }
 @mixin button_gradient_hover($button_gradient_hover){
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  background: #de2930;
 }
 
 @mixin input($input){
-  width: 300px;
-  height: 25px;
+  width: 308px;
+  height: 40px;
+  border-radius:19px;
+  background-color: #fff;
+  border: none;
   box-sizing: border-box;
-  padding: 0 5px;
-  color: #000;
-  font-size: 14px;
+  padding: 0 5px 0 58px;
+  color: #aebfcb;
+  font-size: 16px;
   font-family: $ffamily;
-  border: 1px solid #000;
-  border-radius: 3px;
 }
 @mixin input_focus($input_focus){
   box-shadow: 0 0 2px #99e6f9;
@@ -59,7 +52,7 @@ $gradient: linear-gradient(to right, #d22beb 0%, #d22beb 0%, #1a94f2 100%);
 $white: #fff;
 $black: #000;
 $fsize: 14px;
-$ffamily:  'Arial';
+$ffamily: 'Ubuntu';
 
 //custom font family
 $fontfamily:  'Clear Sans';
