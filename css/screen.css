@@ -728,6 +728,405 @@ textarea {
   text-align: center;
 }
 
+.center_form, .wall {
+  background: url(../img/center_form_bg.jpg) no-repeat top center;
+  height: 597px;
+  text-align: center;
+}
+
+.center_form .main_form, .wall .main_form {
+  display: inline-block;
+  float: none;
+  margin: 60px 0 0 0;
+}
+
+.prepare_wrap {
+  padding: 35px 0;
+}
+
+.prepare_block {
+  text-align: center;
+}
+
+.prepare_block figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 372px;
+}
+
+.prepare_block figure img {
+  display: block;
+}
+
+.prepare_block figcaption {
+  color: #fff;
+  background: #b2292e;
+  height: 70px;
+}
+
+.prepare_block figcaption small {
+  font-size: 16px;
+  display: block;
+  padding: 9px 0 0 0;
+}
+
+.prepare_block figcaption b {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wall {
+  background: url(../img/wall.jpg) no-repeat top center;
+}
+
+.wall .main_form {
+  width: 711px;
+}
+
+.wall .main_form input {
+  margin: 0 10px;
+}
+
+.wall .main_form .input_txt {
+  width: 640px;
+  padding-left: 15px;
+}
+
+.house_wrap {
+  padding: 35px 0;
+}
+
+.house_wrap .video_item article a {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 16px;
+  color: #b2292e;
+  text-decoration: none;
+  border-bottom: 1px dotted #b2292e;
+}
+
+.house_wrap .video_item article a:hover {
+  border-color: #fff;
+}
+
+.diller_wrap {
+  background: #f8f8f8;
+  padding: 25px 0 0 0;
+}
+
+.diller_block {
+  position: relative;
+  overflow: hidden;
+}
+
+.diller_block figure {
+  float: right;
+}
+
+.diller_block article {
+  padding: 27px 40px 0 0;
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  color: #8b8f93;
+}
+
+.diller_block article p {
+  padding-bottom: 23px;
+}
+
+.clients_wrap {
+  padding: 30px 0;
+}
+
+.clients_block {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.clients_block .clients_item {
+  display: inline-block;
+  width: 33%;
+  box-sizing: border-box;
+  padding: 0 30px;
+  vertical-align: top;
+  padding-bottom: 50px;
+  color: #8b8f93;
+  font-size: 16px;
+}
+
+.clients_block .clients_item figcaption {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.steps_wrap {
+  background: #f8f8f8;
+  padding: 40px 0;
+}
+
+.steps_wrap .title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.steps_block {
+  margin: 40px 0 0 0;
+  text-align: center;
+  background: url(../img/step.png) no-repeat top center;
+  padding: 110px 0 0 0;
+}
+
+.steps_block dl {
+  display: inline-block;
+  width: 270px;
+  vertical-align: top;
+  margin: 0 0px 0 0px;
+}
+
+.steps_block dl:nth-child(2) {
+  margin: 0 48px;
+}
+
+.steps_block dl dt {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+}
+
+.steps_block dl dd {
+  font-size: 18px;
+  color: #8b8f93;
+}
+
+.delivery_wrap {
+  padding: 38px 0;
+}
+
+.delivery_wrap article {
+  position: relative;
+  overflow: hidden;
+  padding: 35px 0 0 56px;
+  color: #8b8f93;
+  font-size: 16px;
+}
+
+.delivery_wrap article b {
+  display: block;
+  color: #000;
+}
+
+.delivery_wrap article p {
+  padding-bottom: 16px;
+}
+
+.delivery_block {
+  position: relative;
+  overflow: hidden;
+}
+
+.delivery_slider {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 570px;
+  height: 330px;
+}
+
+.delivery_slider .bx-wrapper, .delivery_slider .bx-wrapper .bx-viewport {
+  margin: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.delivery_slider .bx-wrapper .bx-pager {
+  display: none;
+}
+
+.delivery_slider .bx-wrapper .bx-caption {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  height: 50px;
+}
+
+.delivery_slider #slider-next, .delivery_slider #slider-prev {
+  position: absolute;
+  bottom: 14px;
+  z-index: 100;
+  width: 12px;
+  height: 21px;
+  color: transparent;
+  background: url(../img/arr_right.png) no-repeat left center;
+}
+
+.delivery_slider #slider-next a, .delivery_slider #slider-prev a {
+  display: block;
+  width: 12px;
+  height: 21px;
+}
+
+.delivery_slider #slider-next {
+  right: 14px;
+}
+
+.delivery_slider #slider-prev {
+  left: 14px;
+  background: url(../img/arr_left.png) no-repeat left center;
+}
+
+.delivery_slider .bx-wrapper .bx-caption span {
+  font-size: 20px;
+  font-family: "Ubuntu";
+  padding: 8px;
+}
+
+.pay_wrap {
+  padding: 30px 0 80px 0;
+  background: #f8f8f8;
+}
+
+.pay {
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.pay figure {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  font-size: 16px;
+  color: #8b8f93;
+}
+
+.pay figure figcaption b {
+  font-size: 18px;
+  display: block;
+  color: #000;
+}
+
+.reviews_wrap {
+  padding: 35px 0;
+}
+
+.rev_col {
+  position: relative;
+  overflow: hidden;
+}
+
+.rev_col dl {
+  width: 430px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rev_col dl dt {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 13px;
+}
+
+.rev_col dl dt span {
+  display: block;
+  font-weight: normal;
+}
+
+.rev_col dl dd {
+  font-size: 16px;
+  color: #8b8f93;
+}
+
+.thanks_partners {
+  background: #f8f8f8;
+  padding: 29px 0;
+}
+
+.thanks_partners_images {
+  text-align: center;
+}
+
+.thanks_partners_images a {
+  display: inline-block;
+}
+
+.thanks_partners_images a img {
+  display: block;
+  border: 4px solid #fff;
+  background-color: #00a7e5;
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+  margin: 0 8px;
+}
+
+.office_wrap {
+  padding: 35px 0;
+}
+
+.office_block {
+  position: relative;
+  overflow: hidden;
+}
+
+.office_block .float_left {
+  width: 391px;
+}
+
+.office_block .float_left p {
+  font-size: 18px;
+  color: #111111;
+  padding-bottom: 20px;
+}
+
+.office_block .float_left p b {
+  font-weight: bold;
+}
+
+.office_block .float_left strong {
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.office_block .float_left input, .office_block .float_left textarea {
+  border: 1px solid #aebfcb;
+  margin-bottom: 12px;
+}
+
+.office_block .float_left .input_mail {
+  background: url(../img/mail.png) no-repeat 20px center;
+}
+
+.office_block .float_left textarea {
+  padding-left: 20px;
+}
+
+.office_block .float_left .button {
+  margin: 0 80px 0 0;
+}
+
+.sub_vk {
+  background: #f8f8f8;
+  padding: 23px 0;
+  text-align: center;
+}
+
+.sub_vk strong {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #000000;
+  font-weight: normal;
+  padding-bottom: 22px;
+  display: block;
+}
+
 .footer {
   position: relative;
   overflow: hidden;

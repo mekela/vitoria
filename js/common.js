@@ -12,8 +12,7 @@ $(document).ready(function() {
 	$('.bxslider').bxSlider({
 	  nextSelector: '#slider-next',
 	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	  captions: true
 	});
 
 	/* - - - - - - - - - - - - - -   valid  - - - - - - - - - - - - - - - - */
