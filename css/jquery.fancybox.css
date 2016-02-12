@@ -26,7 +26,7 @@
 
 .fancybox-skin {
 	position: relative;
-	background: #f9f9f9;
+	background: #fff;
 	color: #444;
 	text-shadow: none;
 	-webkit-border-radius: 4px;
@@ -39,9 +39,7 @@
 }
 
 .fancybox-opened .fancybox-skin {
-	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
 }
 
 .fancybox-outer, .fancybox-inner {
@@ -99,12 +97,13 @@
 
 .fancybox-close {
 	position: absolute;
-	top: -18px;
-	right: -18px;
+	top: 8px;
+	right: 8px;
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
 	z-index: 8040;
+	background: url('../img/icons/close.png') center no-repeat;
 }
 
 .fancybox-nav {

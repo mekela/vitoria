@@ -428,6 +428,42 @@ textarea {
   text-align: center;
 }
 
+.timer {
+  text-align: center;
+  font-size: 15px;
+  color: #c7c6c7;
+}
+
+.timer strong {
+  font-weight: normal;
+  display: block;
+  padding-bottom: 1px;
+}
+
+.timer div {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.timer div span {
+  display: inline-block;
+  padding: 0 5px;
+  width: 50px;
+  text-align: center;
+}
+
+.timer nav {
+  margin-top: -18px;
+}
+
+.timer nav span {
+  text-align: center;
+  padding: 0 5px;
+  width: 50px;
+  display: inline-block;
+}
+
 .tobottom {
   position: absolute;
   text-align: center;
@@ -1130,4 +1166,356 @@ textarea {
 .footer {
   position: relative;
   overflow: hidden;
+  height: 720px;
+}
+
+.footer .main_form {
+  width: 310px;
+  background: none;
+  border: none;
+  padding-top: 37px;
+}
+
+.footer .main_form form {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.footer .main_form .button {
+  display: block;
+  width: 308px;
+}
+
+.footer .main_form h5 {
+  padding-bottom: 15px;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 720px;
+}
+
+.foot_wrap {
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  width: 1164px;
+  height: 264px;
+  border: 3px solid #fff;
+  background-color: rgba(37, 37, 37, 0.8);
+  margin: 0 auto;
+  margin-top: 441px;
+}
+
+.foot_logo {
+  float: left;
+  padding: 27px;
+}
+
+.foot_address {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 354px;
+  font-size: 17px;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.foot_address span {
+  font-size: 16px;
+  color: #a0a0a0;
+  display: block;
+}
+
+.foot_address p {
+  padding-bottom: 14px;
+}
+
+/*---------------multi------------------------*/
+.header_black {
+  height: 700px;
+  background: #f8f8f8 url(../img/big_brick.jpg) no-repeat center bottom;
+}
+
+.header_black .logo .slogan {
+  color: #363636;
+}
+
+.header_black .tel {
+  color: #363636;
+}
+
+.header_black .order_call {
+  color: #b0161d;
+  border-color: #b0161d;
+}
+
+.header_black .menu li a {
+  color: #757575;
+}
+
+.header_black .menu li a:hover, .header_black .menu li a.active {
+  color: #b0161d;
+  border-color: #b0161d;
+}
+
+.head_product_wrap {
+  padding: 60px 0 0 0;
+  width: 465px;
+}
+
+.head_product_title {
+  border-left: 5px solid #b2292e;
+  padding-left: 10px;
+  height: 245px;
+}
+
+.head_product_title h6 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1.1;
+  padding-bottom: 10px;
+}
+
+.head_product_title small {
+  font-size: 20px;
+  color: #000000;
+}
+
+.head_product_price {
+  padding-left: 17px;
+  margin-top: 29px;
+}
+
+.head_product_price strong {
+  font-size: 35px;
+  color: #b2292e;
+  display: block;
+}
+
+.head_product_price span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #838383;
+  display: block;
+  padding-bottom: 14px;
+}
+
+.head_product_button {
+  padding-left: 17px;
+  margin-top: 19px;
+}
+
+.head_product_button .button {
+  width: 271px;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.questions_wrap {
+  background: #363636;
+  padding: 28px 0;
+}
+
+.questions_wrap .title {
+  color: #fff;
+  font-size: 24px;
+}
+
+.questions_wrap .main_form {
+  float: none;
+  width: 100%;
+  border: none;
+  padding: 0;
+  background: none;
+  text-align: center;
+}
+
+.questions_wrap .main_form form {
+  padding: 0;
+}
+
+.questions_wrap .main_form div {
+  display: inline-block;
+}
+
+.questions_wrap .main_form .input_tel {
+  margin: 0 15px;
+}
+
+.questions_wrap .main_form .button {
+  width: 245px;
+  text-align: center;
+}
+
+.about_bricks {
+  position: relative;
+  overflow: hidden;
+  padding: 44px 0;
+}
+
+.about_bricks img {
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.about_bricks article {
+  position: relative;
+  overflow: hidden;
+  font-size: 15px;
+  color: #8b8f93;
+}
+
+.about_bricks article p {
+  padding-bottom: 15px;
+}
+
+.about_bricks article h5 {
+  font-size: 25px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.tech_wrap {
+  padding: 35px 0;
+  background: url(../img/brick_size.png) no-repeat center 120px;
+}
+
+.tech_block ul {
+  margin: 160px 0 0 0;
+  padding-left: 25px;
+  height: 405px;
+  background: url(../img/tech_item.png) repeat-y left top;
+  width: 455px;
+  float: right;
+  line-height: 28px;
+  color: #8b8f93;
+  font-size: 16px;
+}
+
+.tech_block ul b {
+  color: #000000;
+  font-weight: normal;
+}
+
+.tech_block ul li {
+  position: relative;
+  bottom: 7px;
+}
+
+/*-------------modal------------*/
+.modal {
+  padding: 23px;
+}
+
+.modal_title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.modal_subtitle {
+  color: #000;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.modal_project {
+  position: relative;
+  overflow: hidden;
+  line-height: 22px;
+  color: #8b8f93;
+  font-size: 16px;
+  width: 940px;
+}
+
+.modal_project p, .modal_project ul {
+  padding-bottom: 24px;
+}
+
+.modal_project b {
+  font-weight: normal;
+  color: #000000;
+}
+
+.modal_project article {
+  position: relative;
+  overflow: hidden;
+}
+
+.modal_project_images {
+  float: left;
+  width: 400px;
+  padding: 0 33px 0 0;
+}
+
+.modal .main_form {
+  border: none;
+  background: none;
+}
+
+.modal .main_form h5 {
+  color: #000;
+}
+
+.modal .main_form input {
+  border: 1px solid #aebfcb;
+}
+
+.modal .main_form div {
+  text-align: center;
+}
+
+.modal .main_form small {
+  color: #aeaeae;
+  font-size: 13px;
+}
+
+.modal .main_form .input_numb {
+  padding-left: 15px;
+}
+
+.modal .main_form h6 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #6b6b6b;
+}
+
+.modal .head_product_price strong, .modal .head_product_price span {
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+
+.brick_modal_tags {
+  text-align: center;
+  padding: 36px 0 0  0;
+}
+
+.brick_modal_tags figure {
+  text-align: left;
+  display: inline-block;
+  width: 24%;
+  padding-bottom: 17px;
+}
+
+.brick_modal_tags figure img {
+  float: left;
+  padding: 0 13px 22px 0;
+}
+
+.brick_modal_tags figure figcaption {
+  position: relative;
+  overflow: hidden;
+  font-size: 15px;
+  color: #8b8f93;
 }
