@@ -69,7 +69,7 @@
 				font-size: 15px;
 				line-height: 29px;
 				border: 1px solid transparent;
-				&:hover, &.active{
+				&:hover, &.active, &:active{
 					border-color: #fff;
 					color: #fff;
 				}
@@ -97,6 +97,7 @@
 				color: #ffffff;
 				display: block;
 				font-size: 18px;
+			    animation: flash 5s infinite;
 			}
 		}
 		.main_form{
@@ -254,10 +255,13 @@
 		figure{
 			vertical-align: top;
 			display: inline-block;
-			width: 24%;
+			width: 24%; 
 			padding-bottom: 62px;
 			img{
 				padding-bottom: 10px;
+				 -webkit-filter: brightness(200%);
+				 -moz-filter: brightness(200%);
+				 filter: brightness(200%);
 				display: inline-block;
 			}
 			figcaption{
@@ -384,7 +388,7 @@
 			display: inline-block;
 			vertical-align: top;
 			width: 370px;
-			height: 637px;
+			min-height: 637px;
 			margin: 0 10px;
 			padding: 14px ;
 			background-color: #fff;
@@ -396,9 +400,15 @@
 			font-size: 24px;
 			font-weight: bold;
 			text-transform: uppercase;
+			small{
+				display: block;
+				font-weight: normal;
+				text-transform: none;
+				font-size: 17px;
+			}
 		}
 		dl{
-			height: 220px;
+			min-height: 220px;
 		}
 		dt{
 			font-weight: bold;
@@ -664,6 +674,11 @@
 				vertical-align: top;
 				font-size: 16px;
 				color: #8b8f93;
+				transition: all 0.5s ease;
+				span{
+					display: block;
+					height: 73px;
+				}
 				figcaption{
 					b{
 						font-size: 18px;
@@ -671,6 +686,9 @@
 						color: #000;
 					}
 				}
+				&:hover{
+					transform: scale(1.05);
+				}	
 			}
 		}
 
@@ -679,6 +697,7 @@
 	}
 		.rev_col{
 			@include povh('');
+			padding-bottom: 40px;
 			dl{
 				width: 430px;
 				@include povh('');
@@ -1075,6 +1094,32 @@
 			@include povh('');
 			font-size: 15px;
 			color: #8b8f93;
+		}
+	}
+}
+
+
+/*----------menu-----------*/
+.menu.fixed{
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	height: 57px;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	ul{
+		padding: 12px 0 0 0;
+		li{
+			a{
+				color: #b3b3b3;
+				&.active, &:hover{
+					color: #b0161d;
+					border-color: #b0161d;
+				}
+			}
 		}
 	}
 }

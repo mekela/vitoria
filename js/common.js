@@ -12,7 +12,17 @@ $(document).ready(function() {
 	$('.bxslider').bxSlider({
 	  nextSelector: '#slider-next',
 	  prevSelector: '#slider-prev',
-	  captions: true
+	  captions: true,
+	  auto: true
+	});
+
+	//wow
+	new WOW().init();
+
+	//scroll 
+	$('.menu li a, .tobottom a').on('click',function(){
+		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-55},800);
+		return false;
 	});
 
 	//timer
@@ -98,4 +108,14 @@ $(document).ready(function() {
 	    } 
 	});
 
+});
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+        $(".menu").addClass("fixed");
+    } else {
+        $(".menu").removeClass("fixed");
+    }
 });

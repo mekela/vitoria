@@ -97,8 +97,10 @@ h6{font-size:14px;}
 //buttons and inputs
 .button{
   @include button('');
+  transition: all 0.5s ease;
   &:hover{
     @include button_gradient_hover('');
+    transform: scale(1.05);
   }
 }
 input[type=text], input[type=email], input[type=phone], input[type=search], textarea{
