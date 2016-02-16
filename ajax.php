@@ -5,7 +5,7 @@
 			${$key} = $val;
 		}
 		
-		$to  = "site@site.com" ;		
+		$to  = "sania_free@i.ua" ;		
 		$from  = "site@site.com" ;		
 
 		
@@ -18,7 +18,23 @@
 			<html>
 				Name:".$uname."<br/>Phone:".$phone."<br/>Email:".$email."
 			</html>";
-		}						
+		},	
+
+		if($action_type=='form_ask'){
+		
+			$emessage = "
+			<html>
+				Name:".$uname."<br/>Phone:".$phone."<br/>Вопрос:".$txt."
+			</html>";
+		},
+		if($action_type=='form_ask2'){
+		
+			$emessage = "
+			<html>
+				Email:".$email."<br/>Вопрос:".$txt."
+			</html>";
+		}
+
 			$headers  = "Content-type: text/html; charset=utf-8 \r\n";
 			$headers .= "From: ".$from."\r\n";
 								

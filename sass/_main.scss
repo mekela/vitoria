@@ -3,9 +3,17 @@
  //header
  .header{
 	@include povh('');
-	background:url(../img/top_bg.jpg) no-repeat top center  ;
+	//background:url(../img/top_bg.jpg) no-repeat top center  ;
 	height: 900px;
 	padding: 14px 0 0 0;
+ }
+ .head_bg{
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	animation: zoomimg 25s infinite;
  }
 	.logo{
 		padding: 11px 0 0 0;
@@ -446,9 +454,12 @@
 		background: url(../img/center_form_bg.jpg) no-repeat top center;
 		height: 597px;
 		text-align: center;
+		@include povh('');
 		.main_form{
 			display: inline-block;
 			float: none;
+			position: relative;
+			z-index: 3;
 			margin: 60px 0 0 0;
 		}
 	}
@@ -458,12 +469,20 @@
 	}
 		.prepare_block{
 			text-align: center;
+			position: relative;
 			figure{
 				display: inline-block;
 				vertical-align: top;
+				position: relative;
 				width: 372px;
 				img{
 					display: block;
+				}
+				&:hover{
+					.prepare_hover{
+						opacity: 1;
+						transform: scale(1);
+					}
 				}
 			}
 			figcaption{
@@ -482,7 +501,62 @@
 				}
 			}
 		}
-	
+			.prepare_hover{
+				position: absolute;
+				top: 0;
+				transform: scale(0);
+				transition: all 0.5s ease;
+				background:#b2292e;
+				box-sizing: border-box;
+				left: 0;
+				height: 100%;
+				z-index: 2;
+				opacity: 0;
+				strong{
+					display: block;
+					color: #fff;
+					padding-bottom: 23px;
+					font-weight: normal;
+					small{
+					font-size: 16px;
+					display: block;
+					padding: 9px 0 0 0;
+					}
+					b{
+						font-size: 20px;
+						font-weight: bold;
+						text-transform: uppercase;
+					}
+				}
+				p{
+					padding: 0 12px;
+					text-align: left;
+					font-size: 15px;
+					color: #ffffff;
+					line-height: 19px;
+					padding-bottom: 31px
+				}
+				.button{
+					position: absolute;
+					left: 33%;
+					bottom: 23px;
+					background:#fff;
+					color: #b2292e;
+				}
+				ul{
+					text-align: left;
+					padding: 0 12px;
+					font-size: 15px;
+					color: #ffffff;
+					line-height: 19px;
+				}
+			}
+			.price_prepare{
+				text-align: left;
+				color: #ffffff;
+				font-size: 20px;
+				padding: 0 12px;
+			}
 	.wall{
 		background:url(../img/wall.jpg) no-repeat top center;
 		.main_form{
@@ -858,6 +932,7 @@
 /*---------------multi------------------------*/
 .header_black{
 	height: 700px;
+	transition: all 0.5s ease;
 	background: #f8f8f8 url(../img/big_brick.jpg) no-repeat center bottom;
 	.logo{
 		.slogan{
@@ -877,6 +952,10 @@
 	.menu li a:hover, .menu li a.active{
 		color: #b0161d;
 		border-color: #b0161d;
+	}
+	&:hover{
+		transition: all 0.5s ease;
+		background-size: 1920px auto;
 	}
 }
 

@@ -23,6 +23,11 @@ overflow: hidden;
  }
 
 
+ @keyframes zoomimg {
+  0%, 100% {transform: scale(1.5);} 
+  50% {transform: scale(1);}
+ }
+
 //buttons and inputs
 
 @mixin button($button){
