@@ -1,4 +1,4 @@
-<?
+<?php
 	
 	if (isset($_GET['action']) && $_GET['action']=='send_form'){
 		foreach ($_GET as $key => $val) {
@@ -18,16 +18,16 @@
 			<html>
 				Name:".$uname."<br/>Phone:".$phone."<br/>Email:".$email."
 			</html>";
-		},	
+		}	
 
-		if($action_type=='form_ask'){
+		elseif($action_type=='form_ask'){
 		
 			$emessage = "
 			<html>
 				Name:".$uname."<br/>Phone:".$phone."<br/>Вопрос:".$txt."
 			</html>";
-		},
-		if($action_type=='form_ask2'){
+		}
+		elseif($action_type=='form_ask2'){
 		
 			$emessage = "
 			<html>

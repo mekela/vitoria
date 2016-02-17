@@ -5,7 +5,7 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="viewport" content="initial-scale=1"/>
-		<title>title</title>
+		<title>POROTHERM</title>
 		<!--Favicon-->
 			<link rel="icon" type="image/png" href="favicon.ico">
 		<!--End Favicon-->
@@ -24,6 +24,14 @@
 			<script src="js/count.js"></script>
 			<script src="js/wow.min.js"></script>
 			<script src="js/common.js"></script>
+
+			<!-- Put this script tag to the <head> of your page -->
+			<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+			<script type="text/javascript">
+			  VK.init({apiId: 5300561, onlyWidgets: true});
+			</script>
+
+
 			<!--[if IE]>  
 				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
 			<![endif]--> 
@@ -290,6 +298,16 @@
 						работать!!!</dd>
 				</dl>
 			</div>
+
+			<div class="vk_comm">
+				<!-- Put this div tag to the place, where the Comments block will be -->
+				<div id="vk_comments"></div>
+				<script type="text/javascript">
+				VK.Widgets.Comments("vk_comments", {limit: 5, width: "940", attach: "*"});
+				</script>
+			</div>
+
+			
 		</div>
 	</div>
 
@@ -681,7 +699,7 @@
 
 <!--modals-->
 <div id="thanks" class="thanks modal">
-    <b>Thanks for contacting us</b>
+    <b>Спасибо <br> мы свяжемся с вами в ближайшее время.</b>
 </div>
 
 <div id="house_modal1" class="modal">

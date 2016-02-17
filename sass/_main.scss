@@ -389,9 +389,14 @@
 				height: auto;
 				img{
 					max-width: 100%;
+					transition: all 0.5s ease;
 				}
 			}
 		}
+		img{
+			transition: all 0.5s ease;
+		}
+
 		.product_block{
 			display: inline-block;
 			vertical-align: top;
@@ -401,6 +406,11 @@
 			padding: 14px ;
 			background-color: #fff;
 			text-align: left;
+			&:hover{
+			img{
+				transform: scale(1.05);
+			}
+			}
 		}
 		strong{
 			padding: 16px 0 8px 0;
@@ -646,8 +656,8 @@
 		.steps_block{
 			margin: 40px 0 0 0;
 			text-align: center;
-			background:url(../img/step.png) no-repeat top center;
-			padding: 110px 0 0 0;
+			background:url(../img/step_bg.png) no-repeat top center;
+			padding: 0px 0 0 0;
 			dl{
 				display: inline-block;
 				width: 270px;
@@ -655,6 +665,9 @@
 				margin: 0 0px 0 0px;
 				&:nth-child(2){
 					margin:0 48px;
+					&:before{
+						background:url(../img/step.png) no-repeat -323px 0;
+					}
 				}
 				dt{
 					font-weight: bold;
@@ -664,6 +677,20 @@
 				dd{
 					font-size: 18px;
 					color: #8b8f93;
+				}
+				&:before{
+					content: '';
+					background:url(../img/step.png) no-repeat 0 0;
+					width: 104px;
+					height: 94px;
+					display: block;
+					margin: 0 auto;
+					padding-bottom: 10px;
+				}
+				&:last-child{
+					&:before{
+						background:url(../img/step.png) no-repeat -638px 0;
+					}
 				}
 			}
 		}
@@ -1201,4 +1228,9 @@
 			}
 		}
 	}
+}
+
+.thanks{
+	text-align: center;
+	text-transform: uppercase;
 }

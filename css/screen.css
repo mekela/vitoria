@@ -259,9 +259,13 @@ textarea { height: 90px; padding-top: 5px; }
 
 .product_wrap.product_wrap_thinner .product_block { width: 270px; height: auto; }
 
-.product_wrap.product_wrap_thinner .product_block img { max-width: 100%; }
+.product_wrap.product_wrap_thinner .product_block img { max-width: 100%; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+
+.product_wrap img { -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
 
 .product_wrap .product_block { display: inline-block; vertical-align: top; width: 370px; min-height: 637px; margin: 0 10px; padding: 14px; background-color: #fff; text-align: left; }
+
+.product_wrap .product_block:hover img { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
 
 .product_wrap strong { padding: 16px 0 8px 0; display: block; font-size: 24px; font-weight: bold; text-transform: uppercase; }
 
@@ -353,15 +357,21 @@ textarea { height: 90px; padding-top: 5px; }
 
 .steps_wrap .title { font-size: 30px; font-weight: bold; color: #000000; }
 
-.steps_block { margin: 40px 0 0 0; text-align: center; background: url(../img/step.png) no-repeat top center; padding: 110px 0 0 0; }
+.steps_block { margin: 40px 0 0 0; text-align: center; background: url(../img/step_bg.png) no-repeat top center; padding: 0px 0 0 0; }
 
 .steps_block dl { display: inline-block; width: 270px; vertical-align: top; margin: 0 0px 0 0px; }
 
 .steps_block dl:nth-child(2) { margin: 0 48px; }
 
+.steps_block dl:nth-child(2):before { background: url(../img/step.png) no-repeat -323px 0; }
+
 .steps_block dl dt { font-weight: bold; font-size: 20px; color: #000000; }
 
 .steps_block dl dd { font-size: 18px; color: #8b8f93; }
+
+.steps_block dl:before { content: ''; background: url(../img/step.png) no-repeat 0 0; width: 104px; height: 94px; display: block; margin: 0 auto; padding-bottom: 10px; }
+
+.steps_block dl:last-child:before { background: url(../img/step.png) no-repeat -638px 0; }
 
 .delivery_wrap { padding: 38px 0; }
 
@@ -583,3 +593,9 @@ textarea { height: 90px; padding-top: 5px; }
 .menu.fixed ul li a { color: #b3b3b3; }
 
 .menu.fixed ul li a.active, .menu.fixed ul li a:hover { color: #b0161d; border-color: #b0161d; }
+
+.thanks { text-align: center; text-transform: uppercase; }
+
+@media only screen and (max-width: 1400px) { .head_bg { height: auto; width: auto; }
+  .product_wrap .product_block { width: 21%; }
+  .product_wrap .product_block img { max-width: 100%; } }
