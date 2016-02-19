@@ -113,7 +113,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .header { position: relative; overflow: hidden; height: 900px; padding: 14px 0 0 0; }
 
-.head_bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; -webkit-animation: zoomimg 25s infinite; animation: zoomimg 25s infinite; }
+.head_bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
 .logo { padding: 11px 0 0 0; float: left; overflow: hidden; width: 535px; }
 
@@ -157,7 +157,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .main_form form div { padding: 0 0 11px 0; }
 
-.main_form form input { width: 308px; height: 40px; border-radius: 19px; background-color: #fff; border: none; }
+.main_form form input { width: 344px; height: 40px; border-radius: 19px; background-color: #fff; border: none; }
 
 .main_form form input.input_name { background: #fff url(../img/man_icon.png) no-repeat 20px center; }
 
@@ -177,7 +177,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .timer nav span { text-align: center; padding: 0 5px; width: 50px; display: inline-block; }
 
-.timer + div .button { width: 285px; text-align: center; }
+.timer + div.timerbtn .button { width: 285px; text-align: center; }
 
 .tobottom { position: absolute; text-align: center; bottom: 0; left: 0; width: 100%; height: 117px; }
 
@@ -269,11 +269,11 @@ textarea { height: 90px; padding-top: 5px; }
 
 .product_wrap .product_block:hover img { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
 
-.product_wrap strong { padding: 16px 0 8px 0; display: block; font-size: 24px; font-weight: bold; text-transform: uppercase; }
+.product_wrap strong { padding: 16px 0 8px 0; display: block; font-size: 24px; font-weight: bold; text-transform: uppercase; height: 62px; }
 
 .product_wrap strong small { display: block; font-weight: normal; text-transform: none; font-size: 17px; }
 
-.product_wrap dl { min-height: 220px; }
+.product_wrap dl { min-height: 376px; }
 
 .product_wrap dt { font-weight: bold; font-size: 18px; padding-bottom: 8px; }
 
@@ -599,6 +599,8 @@ textarea { height: 90px; padding-top: 5px; }
 .menu.fixed ul li a.active, .menu.fixed ul li a:hover { color: #b3b3b3; }
 
 .thanks { text-align: center; text-transform: uppercase; }
+
+.button.full_width { width: 78%; }
 
 @media only screen and (max-width: 1400px) { .head_bg { height: auto; width: auto; }
   .product_wrap .product_block { width: 21%; }
