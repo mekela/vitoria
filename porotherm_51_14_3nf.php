@@ -113,10 +113,8 @@
 		<div class="container">
 			<a target="_blank" href="https://www.youtube.com/channel/UCuqAbIQ6x3diJxcG4XvCyOQ"><img src="img/about_video.png" alt=""></a>
 			<article>
-				<h5>Главное о керамических <br>блоках Porotherm</h5>
-				<p>Porotherm 51 — самые крупные керамические блоки для
-				возведения несущих наружных стен без утепления.</p>
-
+				<h5>Porotherm 51 </h5>
+				<p>– самые крупные керамические блоки для возведения несущих наружных стен без утепления.</p>
 				<p>Блоки подходят для строительства четырёхэтажных
 				зданий. Благодаря соединению вертикальных швов
 				«паз — гребень» материал снижает расход раствора
@@ -175,12 +173,11 @@
 	
 	<div class="tech_wrap">
 		<div class="container">
-			<div class="title">Технические характеристики <b>Porotherm 51</b></div>
+			<div class="title"><b>Porotherm 51: </b>лучший среди аналогов</div>
 			<div class="tech_block">
 				<ul>
-					<li class="wow fadeInUp">Артикул: <b>26100351</b></li>
-					<li class="wow fadeInUp">Размеры, мм (ДхШхВ): <b>510х250х219</b></li>
-					
+					<li class="wow fadeInUp">Артикул <b>26100351</b></li>
+					<li class="wow fadeInUp">Размер, мм <b>510х250х219</b></li>
 					<li class="wow fadeInUp">Формат (NF): <b>14,3</b></li>
 					<li class="wow fadeInUp">Область применения: <b>наружные несущие стены</b></li>
 					<li class="wow fadeInUp">Вес (кг): <b>16</b></li>
@@ -701,20 +698,20 @@
 	            var myMap = new ymaps.Map('map', {
 	                    // При инициализации карты, обязательно нужно указать
 	                    // ее центр и коэффициент масштабирования
-	                    center: [55.896297,37.634421], // москав
+	                    center: [56.315695,44.017063], // Нижний Новгород
 	                    zoom: 15
 	                });
 	 
 					// Создание метки 
 					var myPlacemark = new ymaps.Placemark(
 					// Координаты метки
-					[55.896297,37.634421] , {
+					[56.315695,44.017063] , {
 	                    // Свойства
 	                    // Текст метки
 	                }, {
 	                    iconImageHref: 'img/pin.png', // картинка иконки
 	                    iconImageSize: [75, 100], // размеры картинки
-	                    iconImageOffset: [-16, -200] // смещение картинки
+	                    iconImageOffset: [-16, -300] // смещение картинки
 	                    });     
 	 
 	 

@@ -104,8 +104,16 @@
 	cursor: pointer;
 	z-index: 8040;
 	background: url('../img/icons/close.png') center no-repeat;
+	 filter: gray; 
+	 filter: grayscale(1); 
+	 -webkit-filter: grayscale(1); 
+	 opacity: 0.5;
 }
-
+.fancybox-close:hover{
+	opacity: 1;
+	filter: none;
+    -webkit-filter: grayscale(0);
+}
 .fancybox-nav {
 	position: absolute;
 	top: 0;

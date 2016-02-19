@@ -185,6 +185,12 @@
 					}
 				}
 			}
+			.timer + div{
+				.button{
+					width: 285px;
+					text-align: center;
+				}
+			}
 	.tobottom{
 		position: absolute;
 		text-align: center;
@@ -548,10 +554,13 @@
 				}
 				.button{
 					position: absolute;
-					left: 33%;
+					left: 0%;
+					margin: 0 2%;
+					width: 313px;
 					bottom: 23px;
 					background:#fff;
 					color: #b2292e;
+
 				}
 				ul{
 					text-align: left;
@@ -823,6 +832,7 @@
 	.thanks_partners{
 		background:#f8f8f8;
 		padding: 29px 0 ;
+		display: none;
 	}
 		.thanks_partners_images{
 			text-align: center;
@@ -887,6 +897,13 @@
 			font-weight: normal;
 			padding-bottom: 22px;
 			display: block;
+		}
+		a{
+			background: none !important;
+			box-shadow: none;
+			border: none;
+			border-radius: 0;
+			padding: 0;
 		}
 	}
 
@@ -1191,6 +1208,7 @@
 		text-align: left;
 		display: inline-block;
 		width: 24%;
+		vertical-align: top;
 		padding-bottom: 17px;
 		img{
 			float: left;
@@ -1220,10 +1238,10 @@
 		padding: 12px 0 0 0;
 		li{
 			a{
-				color: #b3b3b3;
+				color: #b0161d;
 				&.active, &:hover{
-					color: #b0161d;
-					border-color: #b0161d;
+					color: #b3b3b3;
+					//border-color: #b0161d;
 				}
 			}
 		}

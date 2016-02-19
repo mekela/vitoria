@@ -177,6 +177,8 @@ textarea { height: 90px; padding-top: 5px; }
 
 .timer nav span { text-align: center; padding: 0 5px; width: 50px; display: inline-block; }
 
+.timer + div .button { width: 285px; text-align: center; }
+
 .tobottom { position: absolute; text-align: center; bottom: 0; left: 0; width: 100%; height: 117px; }
 
 .tobottom a { display: inline-block; text-decoration: none; }
@@ -315,7 +317,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .prepare_hover p { padding: 0 12px; text-align: left; font-size: 15px; color: #ffffff; line-height: 19px; padding-bottom: 31px; }
 
-.prepare_hover .button { position: absolute; left: 33%; bottom: 23px; background: #fff; color: #b2292e; }
+.prepare_hover .button { position: absolute; left: 0%; margin: 0 2%; width: 313px; bottom: 23px; background: #fff; color: #b2292e; }
 
 .prepare_hover ul { text-align: left; padding: 0 12px; font-size: 15px; color: #ffffff; line-height: 19px; }
 
@@ -425,7 +427,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .rev_col dl dd { font-size: 16px; color: #8b8f93; }
 
-.thanks_partners { background: #f8f8f8; padding: 29px 0; }
+.thanks_partners { background: #f8f8f8; padding: 29px 0; display: none; }
 
 .thanks_partners_images { text-align: center; }
 
@@ -456,6 +458,8 @@ textarea { height: 90px; padding-top: 5px; }
 .sub_vk { background: #f8f8f8; padding: 23px 0; text-align: center; }
 
 .sub_vk strong { text-transform: uppercase; font-size: 22px; color: #000000; font-weight: normal; padding-bottom: 22px; display: block; }
+
+.sub_vk a { background: none !important; box-shadow: none; border: none; border-radius: 0; padding: 0; }
 
 .footer { position: relative; overflow: hidden; height: 720px; }
 
@@ -579,7 +583,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .brick_modal_tags { text-align: center; padding: 36px 0 0  0; }
 
-.brick_modal_tags figure { text-align: left; display: inline-block; width: 24%; padding-bottom: 17px; }
+.brick_modal_tags figure { text-align: left; display: inline-block; width: 24%; vertical-align: top; padding-bottom: 17px; }
 
 .brick_modal_tags figure img { float: left; padding: 0 13px 22px 0; }
 
@@ -590,9 +594,9 @@ textarea { height: 90px; padding-top: 5px; }
 
 .menu.fixed ul { padding: 12px 0 0 0; }
 
-.menu.fixed ul li a { color: #b3b3b3; }
+.menu.fixed ul li a { color: #b0161d; }
 
-.menu.fixed ul li a.active, .menu.fixed ul li a:hover { color: #b0161d; border-color: #b0161d; }
+.menu.fixed ul li a.active, .menu.fixed ul li a:hover { color: #b3b3b3; }
 
 .thanks { text-align: center; text-transform: uppercase; }
 
