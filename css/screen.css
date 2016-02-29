@@ -37,7 +37,7 @@ blockquote, q { quotes: none; }
 
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-body { font-family: "Ubuntu"; font-weight: normal; font-size: 12px; line-height: 1.4; }
+body { font-family: "Ubuntu", sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; }
 
 a { text-decoration: underline; color: inherit; }
 
@@ -57,11 +57,11 @@ h5 { font-size: 16px; }
 
 h6 { font-size: 14px; }
 
-.button { background: #b2292e; border-radius: 21px; font-family: "Ubuntu"; display: inline-block; color: #ffffff; font-size: 14px; line-height: 1.4; font-weight: bold; text-transform: uppercase; padding: 10px 20px 10px 20px; text-decoration: none; border: none; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.button { background: #b2292e; border-radius: 21px; font-family: "Ubuntu", sans-serif; display: inline-block; color: #ffffff; font-size: 14px; line-height: 1.4; font-weight: bold; text-transform: uppercase; padding: 10px 20px 10px 20px; text-decoration: none; border: none; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
 
 .button:hover { background: #de2930; -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
 
-input[type=text], input[type=email], input[type=phone], input[type=search], textarea { width: 308px; height: 40px; border-radius: 19px; background-color: #fff; border: none; box-sizing: border-box; padding: 0 5px 0 58px; color: #aebfcb; font-size: 16px; font-family: "Ubuntu"; }
+input[type=text], input[type=email], input[type=phone], input[type=search], textarea { width: 308px; height: 40px; border-radius: 19px; background-color: #fff; border: none; box-sizing: border-box; padding: 0 5px 0 58px; color: #aebfcb; font-size: 16px; font-family: "Ubuntu", sans-serif; }
 
 input[type=text]:focus, input[type=email]:focus, input[type=phone]:focus, input[type=search]:focus, textarea:focus { box-shadow: 0 0 2px #99e6f9; }
 
@@ -145,7 +145,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .slogan_big b { font-size: 34px; display: block; text-transform: uppercase; line-height: 50px; }
 
-.slogan_big small { color: #ffffff; display: block; font-size: 18px; -webkit-animation: flash 5s infinite; animation: flash 5s infinite; }
+.slogan_big small { color: #ffffff; display: block; font-size: 18px; /*-webkit-animation: flash 5s infinite; animation: flash 5s infinite;*/ }
 
 .main_form { float: right; background: rgba(0, 0, 0, 0.5); border: 3px solid #fff; padding: 27px 18px; width: 343px; }
 
@@ -159,9 +159,13 @@ textarea { height: 90px; padding-top: 5px; }
 
 .main_form form input { width: 344px; height: 40px; border-radius: 19px; background-color: #fff; border: none; }
 
-.main_form form input.input_name { background: #fff url(../img/man_icon.png) no-repeat 20px center; }
+.main_form form input.input_name { background: #fff url(../img/man_icon.png) no-repeat 20px center;}
 
 .main_form form input.input_tel { background: #fff url(../img/phone_icon.png) no-repeat 20px center; }
+
+.wall .main_form form input.input_name, .wall .main_form form input.input_tel{width: 310px;}
+
+.footer .main_form form input.input_name, .footer .main_form form input.input_tel{width: 100%;}
 
 .main_form form small { display: block; color: #fff; font-size: 15px; margin: 17px 0 0 0; text-align: center; }
 
@@ -263,17 +267,23 @@ textarea { height: 90px; padding-top: 5px; }
 
 .product_wrap.product_wrap_thinner .product_block img { max-width: 100%; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
 
-.product_wrap img { -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.product_wrap img { -webkit-transition: all 0.5s ease; transition: all 0.5s ease; margin-bottom: 15px;}
 
-.product_wrap .product_block { display: inline-block; vertical-align: top; width: 370px; min-height: 637px; margin: 0 10px; padding: 14px; background-color: #fff; text-align: left; }
+.product_wrap .product_block { display: inline-block; vertical-align: top; width: 370px;  margin: 0 10px; padding: 14px; background-color: #fff; text-align: left; }
 
 .product_wrap .product_block:hover img { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
 
-.product_wrap strong { padding: 16px 0 8px 0; display: block; font-size: 24px; font-weight: bold; text-transform: uppercase; height: 62px; }
+.product_wrap strong {  display: block; font-size: 24px; line-height: 1.1; font-weight: bold; text-transform: uppercase; margin-bottom: 5px; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 
 .product_wrap strong small { display: block; font-weight: normal; text-transform: none; font-size: 17px; }
 
-.product_wrap dl { min-height: 376px; }
+.product_subtitle{font-weight: normal; text-transform: none; font-size: 17px;}
+
+.product_wrap dl {position: relative;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+    font-family: Verdana;
+    font-size: 15px;
+    line-height: 1.5em;
+}
 
 .product_wrap dt { font-weight: bold; font-size: 18px; padding-bottom: 8px; }
 
@@ -401,7 +411,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .delivery_slider #slider-prev { left: 14px; background: url(../img/arr_left.png) no-repeat left center; }
 
-.delivery_slider .bx-wrapper .bx-caption span { font-size: 20px; font-family: "Ubuntu"; padding: 8px; }
+.delivery_slider .bx-wrapper .bx-caption span { font-size: 20px; font-family: "Ubuntu", sans-serif; padding: 8px; }
 
 .pay_wrap { padding: 30px 0 80px 0; background: #f8f8f8; }
 
@@ -506,15 +516,15 @@ textarea { height: 90px; padding-top: 5px; }
 
 .head_product_title small { font-size: 20px; color: #000000; }
 
-.head_product_price { padding-left: 17px; margin-top: 29px; }
+.head_product_price {  }
 
-.head_product_price strong { font-size: 35px; color: #b2292e; display: block; }
+.head_product_price strong { font-size: 25px; color: #b2292e; display: block; }
 
-.head_product_price span { font-size: 24px; font-weight: bold; color: #838383; display: block; padding-bottom: 14px; }
+.head_product_price span { font-size: 20px; font-weight: bold; color: #838383; display: block; padding-bottom: 14px; }
 
-.head_product_button { padding-left: 17px; margin-top: 19px; }
+.head_product_button { margin-top: 19px; }
 
-.head_product_button .button { width: 271px; font-size: 18px; text-align: center; padding: 15px 0; }
+.head_product_button .button { width: 271px; font-size: 18px; text-align: center; padding: 12px 0; }
 
 .questions_wrap { background: #363636; padding: 28px 0; }
 
@@ -549,13 +559,13 @@ textarea { height: 90px; padding-top: 5px; }
 .tech_block ul li { position: relative; bottom: 7px; }
 
 /*-------------modal------------*/
-.modal { padding: 23px; }
+.modal { padding: 20px; }
 
 .modal_title { font-weight: bold; font-size: 30px; color: #000; text-transform: uppercase; }
 
 .modal_subtitle { color: #000; font-size: 16px; padding-bottom: 20px; }
 
-.modal_project { position: relative; overflow: hidden; line-height: 22px; color: #8b8f93; font-size: 16px; width: 940px; }
+.modal_project { position: relative; overflow: hidden; line-height: 22px; color: #8b8f93; font-size: 16px;  }
 
 .modal_project p, .modal_project ul { padding-bottom: 24px; }
 
@@ -563,11 +573,17 @@ textarea { height: 90px; padding-top: 5px; }
 
 .modal_project article { position: relative; overflow: hidden; }
 
-.modal_project_images { float: left; width: 400px; padding: 0 33px 0 0; }
+.modal_project article h6{text-transform: uppercase;color: #000;font-size: 30px;letter-spacing: 0.03em;font-weight: 700;margin-bottom: 10px;}
+
+.modal_project_images { float: left; width: 390px; }
+
+.modal_project_img_big{background: #f3f3f3;display: table-cell;vertical-align: middle;text-align: center;width: 390px;height: 350px;overflow: hidden;}
+
+/*.modal_project_img_big img{max-width: 100%;-webkit-transform: scale(1.5);-moz-transform: scale(1.5);-o-transform: scale(1.5);-ms-transform: scale(1.5);transform: scale(1.5);}*/
 
 .modal .main_form { border: none; background: none; }
 
-.modal .main_form h5 { color: #000; }
+.modal .main_form h5 { color: #000; font-size: 25px;letter-spacing: 0.03em;}
 
 .modal .main_form input { border: 1px solid #aebfcb; }
 
@@ -577,22 +593,46 @@ textarea { height: 90px; padding-top: 5px; }
 
 .modal .main_form .input_numb { padding-left: 15px; }
 
-.modal .main_form h6 { font-weight: bold; font-size: 18px; color: #6b6b6b; }
+.modal .main_form h6 { font-weight: bold; font-size: 18px; color: #6b6b6b; text-transform: uppercase;letter-spacing: 0.03em;}
 
-.modal .head_product_price strong, .modal .head_product_price span { display: inline-block; padding: 0 20px 0 0; }
+.modal .head_product_price strong{padding: 0 20px 0 0;margin-bottom: 10px;}
+
+.modal .head_product_price strong, .modal .head_product_price span { display: inline-block;  }
+
+.modal_order{width: 460px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: 20px;}
+
+.modal_order .main_form{float: none;margin: 0;padding: 0;width: auto;}
+
+.modal_order .main_form input{width: 100%;}
+
+.modal_order .main_form button{width: 290px;}
+
+.modal_order .main_form small{width: 290px;margin: 10px auto 0;}
+
+.brick_modal{width: 960px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+.brick_modal article{float: right;width: 450px;margin-right: 30px;padding-left: 10px;}
 
 .brick_modal_tags { text-align: center; padding: 36px 0 0  0; }
 
 .brick_modal_tags figure { text-align: left; display: inline-block; width: 24%; vertical-align: top; padding-bottom: 17px; }
 
-.brick_modal_tags figure img { float: left; padding: 0 13px 22px 0; }
+.brick_modal_tags figure img { display: inline-block;vertical-align: middle; padding: 0 13px 0 0; }
 
-.brick_modal_tags figure figcaption { position: relative; overflow: hidden; font-size: 15px; color: #8b8f93; }
+.brick_modal_tags figure figcaption { position: relative; overflow: hidden; font-size: 15px; color: #8b8f93; display: inline-block;vertical-align: middle;}
+
+.modal_house{width: 1000px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+.modal_house .modal_project_images{width: 400px;}
+
+.modal_house .modal_project_img_big{width: 400px;height: 280px;background: transparent;}
+
+.modal_house .modal_project article{float: right;width: 510px;}
 
 /*----------menu-----------*/
-.menu.fixed { margin: 0; position: fixed; top: 0; left: 0; width: 100%; z-index: 10; height: 57px; background-color: #fff; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+.menu.fixed { margin: 0; position: fixed; top: 0; left: 0; width: 100%; z-index: 10; background-color: #fff; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-.menu.fixed ul { padding: 12px 0 0 0; }
+.menu.fixed ul { padding: 12px 0 12px 0; }
 
 .menu.fixed ul li a { color: #b0161d; }
 

@@ -58,10 +58,10 @@
 				<ul>
 					<li><a href="/#main">О Porotherm</a></li>
 					<li><a href="/#catalog">Каталог Porotherm</a></li>
-					<li><a href="/#prepare">Аксессуары Porotherm</a></li>
-					<li><a href="/#diller">О компании</a></li>
-					<li><a href="/#delivery">Доставка и оплата </a></li>
-					<li><a href="/#footer">Контакты</a></li>
+					<li><a href="#prepare">Аксессуары Porotherm</a></li>
+					<li><a href="#diller">О компании</a></li>
+					<li><a href="#delivery">Доставка и оплата </a></li>
+					<li><a href="#footer">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -226,7 +226,7 @@
 		</div>
 	</div>
 	
-	<div class="diller_wrap">
+	<div class="diller_wrap" id="diller">
 		<div class="container">
 			<div class="title">Витория — официальный дилер <b>Wienerberger</b></div>
 			<div class="diller_block">
@@ -309,7 +309,7 @@
 		</div>
 	</div>
 
-	<div class="prepare_wrap">
+	<div class="prepare_wrap" id="prepare">
 		<div class="title">Эти товары обязательно пригодятся вам</div>
 		<div class="prepare_block">
 			<figure>
@@ -685,7 +685,7 @@
 </div>
 <!--end-main-->
 <!--footer-->
-<footer class="footer">
+<footer class="footer" id="footer">
 	<div class="map">
 		<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 		<script type="text/javascript">

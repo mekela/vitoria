@@ -16,6 +16,10 @@ $(document).ready(function() {
 	  auto: true
 	});
 
+	$('.product_block a.button.fancybox').click(function(){
+		$('.modal_order h6').text($(this).attr('data-name'));
+	});
+
 	//wow
 	new WOW().init();
 
@@ -107,6 +111,54 @@ $(document).ready(function() {
 	        /*alert(validate_msg);*/
 	    } 
 	});
+
+	function product(){
+		var productWrap = 0;
+		$('.product_wrap').each(function(){
+			var $block = $(this),
+				$child = $block.find('.product_block'),
+				strongHeight = 0,
+				dlHeight = 0,
+				bHeight = 0;
+			var strongHeightMass = new Array(),
+				dlHeightMass = new Array(),
+				bHeightMass = new Array();
+			strongHeightMass[productWrap] = new Array();
+			dlHeightMass[productWrap] = new Array();
+			bHeightMass[productWrap] = new Array();
+
+			for (var i = 0; i < $child.length; i++) {
+
+				thisStrongHeight = $child.eq(i).find('strong').height();
+				strongHeightMass[productWrap][i] = thisStrongHeight;
+
+				thisDlHeight = $child.eq(i).find('dl').height();
+				dlHeightMass[productWrap][i] = thisDlHeight;
+
+				thisBHeight = $child.eq(i).find('dl+b').height();
+				bHeightMass[productWrap][i] = thisBHeight;
+			}
+
+			strongHeight = Math.max.apply(Math, strongHeightMass[productWrap]);
+			dlHeight = Math.max.apply(Math, dlHeightMass[productWrap]);
+			bHeight = Math.max.apply(Math, bHeightMass[productWrap]);
+
+			$child.find('strong').css('height', strongHeight);
+			$child.find('dl').css('height', dlHeight);
+			$child.find('dl+b').css('height', bHeight);
+
+			//console.log(dlHeight + ' ');
+
+			productWrap++;
+		});
+	};
+	product();
+	$(window).resize(function(){
+		product();
+	});
+
+
+	
 
 });
 
