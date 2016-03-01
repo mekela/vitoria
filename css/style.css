@@ -1,1 +1,71 @@
 /*If you don't use sass, please use this stylesheets*/
+.modal_project_img_big
+	img{
+		-moz-transform: scale(1.6);
+		-webkit-transform: scale(1.6);
+		-o-transform: scale(1.6);
+		-ms-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+
+.head_bg{
+	-webkit-animation: zoomimg 25s infinite;
+	-moz-animation: zoomimg 25s infinite;
+	-o-animation: zoomimg 25s infinite;
+	animation: zoomimg 25s infinite;
+}
+.services_wrap{
+	background: url(../img/man_in_hat.jpg) no-repeat center top fixed;
+}
+.prepare_block figure{
+	margin-bottom: 10px;
+}
+
+.prepare_hover .button {
+    margin: 0 3.3%;
+    width: 307px;
+    color: #b2292e;
+}
+
+.wall button{
+	width: 269px;
+}
+
+.header{
+	background:url(../img/top_bg.jpg) no-repeat top center  ;
+}	
+
+.office_block .float_left .button:hover, .head_product_button .button:hover{
+	-webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.header_black {
+    height: 700px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #f8f8f8;
+}
+
+.office_block .float_left .button{
+	width: 307px;
+}
+
+.modal_project_img_small img{
+	width: 128px;
+}
+.head_brick{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.tech_wrap .head_brick{
+	right: auto;
+	left: 0;
+}
+	.tech_wrap .head_brick img{
+		width: 304px;
+	    position: relative;
+	    top: 118px;
+	}

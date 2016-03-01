@@ -16,7 +16,7 @@ $(document).ready(function() {
 	  auto: true
 	});
 
-	$('.product_block a.button.fancybox').click(function(){
+	$('.product_block a.button.fancybox, .prepare_block a.button.fancybox').click(function(){
 		$('.modal_order h6').text($(this).attr('data-name'));
 	});
 

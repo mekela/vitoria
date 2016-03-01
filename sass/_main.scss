@@ -3,7 +3,7 @@
  //header
  .header{
 	@include povh('');
-	//background:url(../img/top_bg.jpg) no-repeat top center  ;
+	background:url(../img/top_bg.jpg) no-repeat top center  ;
 	height: 900px;
 	padding: 14px 0 0 0;
  }
@@ -260,7 +260,7 @@
 			}
 
 	.services_wrap{
-		background:url(../img/serv_bg.jpg) no-repeat center top;
+		background:url(../img/man_in_hat.jpg) no-repeat center top fixed;
 		height: 450px;
 		text-align: center;
 		.container{  
@@ -281,6 +281,10 @@
 			figcaption{
 				font-size: 16px;
 				color: #fff;
+			}
+			em{
+				display: block;
+				height: 65px;
 			}
 		}
 	}	
@@ -1257,4 +1261,15 @@
 
 .button.full_width{
 	width: 78%;
+}
+
+
+.modal_project_img_big{
+	@include povh('');
+	img{
+		transform: scale(1.5);
+	}
+}
+body{
+	background:red !important;
 }
