@@ -57,7 +57,7 @@
 }
 .head_brick{
 	position: absolute;
-	right: 0;
+	right: 50px;
 	top: 0;
 }
 .tech_wrap .head_brick{
@@ -67,5 +67,16 @@
 	.tech_wrap .head_brick img{
 		width: 304px;
 	    position: relative;
-	    top: 118px;
+	    top: 108px;
 	}
+.tech_wrap{
+	background: none;
+
+}
+.tech_block ul{
+	margin-top: 60px;
+}
+.head_brick img{
+	max-width: 505px;
+	max-height: 449px;
+}
