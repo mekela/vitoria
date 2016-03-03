@@ -699,22 +699,22 @@
 	            var myMap = new ymaps.Map('map', {
 	                    // При инициализации карты, обязательно нужно указать
 	                    // ее центр и коэффициент масштабирования
-	                    center: [55.896297,37.634421], // москав
-	                    zoom: 15,
+	                    center: [55.899694,37.629092], // москав
+	                    zoom: 16,
 	                    controls: ["default","routeEditor"]
 	                });
 	 
 					// Создание метки 
 					var myPlacemark = new ymaps.Placemark(
 					// Координаты метки
-					[55.896297,37.634421] , {
+					[55.90146,37.629092] , {
 	                    // Свойства
 	                    // Текст метки
 	                }, {
 	                	iconLayout: 'default#image',
 	                    iconImageHref: 'img/pin.png', // картинка иконки
 	                    iconImageSize: [75, 100], // размеры картинки
-	                    iconImageOffset: [-156, -270] // смещение картинки
+	                    iconImageOffset: [-34, -75]  // смещение картинки
 	                    });     
 	 
 	 
@@ -917,7 +917,7 @@
 	</div>
 </div>
 
-<div id="order_brick" class="modal">
+<div id="order_brick" class="modal modal_order">
 	<div class="main_form">
 		<h5>оформить заказ</h5>
 		<h6>Porotherm 51</h6>

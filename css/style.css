@@ -15,7 +15,7 @@
 	animation: zoomimg 25s infinite;
 }
 .services_wrap{
-	background: url(../img/man_in_hat.jpg) no-repeat center top fixed;
+	background: url(../img/man_in_hat.jpg) no-repeat center top ;
 }
 .prepare_block figure{
 	margin-bottom: 10px;
@@ -79,4 +79,12 @@
 .head_brick img{
 	max-width: 505px;
 	max-height: 449px;
+}
+
+.services_wrap figure em{
+	height: 64px;
+	display: block;
+}
+.modal_project_img_big{
+	height: 485px;
 }
