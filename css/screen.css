@@ -137,7 +137,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .menu li a { padding: 0 11px; display: inline-block; height: 29px; text-decoration: none; color: #b3b3b3; border-radius: 14px; text-transform: uppercase; font-weight: bold; font-size: 15px; line-height: 29px; border: 1px solid transparent; }
 
-.menu li a:hover, .menu li a.active, .menu li a:active { border-color: #fff; color: #fff; }
+.menu li a:hover, .menu li a.active, .menu li a:active { border-color: #b0161d; color: #fff; }
 
 .head_bottom { padding: 175px 0 0 0; }
 
@@ -643,5 +643,5 @@ textarea { height: 90px; padding-top: 5px; }
 .button.full_width { width: 78%; }
 
 @media only screen and (max-width: 1400px) { .head_bg { height: auto; width: auto; }
-  .product_wrap .product_block { width: 21%; }
+  .product_wrap .product_block { width: 19% !important; }
   .product_wrap .product_block img { max-width: 100%; } }

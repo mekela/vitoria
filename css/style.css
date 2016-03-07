@@ -88,3 +88,8 @@
 .modal_project_img_big{
 	height: 485px;
 }
+
+.clients_item span{
+	display: block;
+	height: 66px;
+}
